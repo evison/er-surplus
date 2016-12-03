@@ -1,0 +1,7 @@
+g++  -g -O3 -I.  -fpic  -march=x86-64 -mtune=generic -pipe -fstack-protector-strong --param=ssp-buffer-size=4  -c SSMax.cpp
+SSMax.cpp: In function ‘int main(int, char**)’:
+SSMax.cpp:437:2: error: ‘csm’ was not declared in this scope
+  csm.optimize();
+  ^
+makefile:14: recipe for target 'SSMax.o' failed
+make: *** [SSMax.o] Error 1
